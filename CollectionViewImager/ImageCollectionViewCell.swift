@@ -16,6 +16,7 @@ class ImageCollectionViewCell: UICollectionViewCell {
     func configure(with imgur: Imagurl ) {
      
         self.titleLabel.text = imgur.title
+        
         imgur.image { (image) in
             self.imageView.image = image
         }

@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+// this called like this because we can split data using keywords
 struct Imagurl {
     
     private let id: String
@@ -26,13 +27,18 @@ struct Imagurl {
         self.link = link
     }
     
+    // this function is used in the collectionviewCell class file inside configure func
     func image(completion:@escaping (UIImage) -> Void) {
         
+        // imageCache is the calass which is called in global , that calls a function that returns an image for id , is not there the else condition will execute
         if let image = imageCache.image(forKey: id) {
             completion(image)
         }else {
+            // this call the image url sends the image data to ImageCollectionViewCell file
             NetworkingService.shared.downloadImage(fromLink: link) { (image) in
+                // this just adds to the cache meemory
                 imageCache.add(image, forKey: self.id)
+                // this sends the image data to the cell file
                 completion(image)
             }
         }

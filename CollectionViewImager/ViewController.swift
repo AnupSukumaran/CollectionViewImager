@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // this calls the function from the NetworkingService class file and calling the funtion getImages , which is just calling the data not just the images
         NetworkingService.shared.getImagers { (response)in
             print("Response  = \(response.imgurs)")
             self.imgurs = response.imgurs

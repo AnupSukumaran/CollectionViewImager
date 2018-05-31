@@ -30,6 +30,7 @@ class NetworkingService {
             do{
                 guard let json = try JSONSerialization.jsonObject(with: data, options: [.mutableContainers]) as? JSON else {return}
                  print("JSON = \(json)")
+                //  the json data is recevied by the GetImageResponse struct with a reciever of type JSON or [String: Any] ie the typealias
                 let getImageReponse = try GetImageResponse(json: json)
                 
                 DispatchQueue.main.async {
@@ -46,6 +47,7 @@ class NetworkingService {
         
     }
     
+    // this func downloads the images with the links receving from model struct file from a func in that file.
     func downloadImage(fromLink url: String, success successBlock: @escaping (UIImage) -> Void){
         guard  let url = URL(string: url) else {
             return

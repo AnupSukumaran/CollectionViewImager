@@ -67,6 +67,8 @@
 			isa = PBXGroup;
 			children = (
 				5A1A45B120BFBCD000380F11 /* AppDelegate.swift */,
+				5A1A45CD20BFEFB000380F11 /* ImageCashe.swift */,
+				5A1A45CB20BFDFF100380F11 /* MyErrors.swift */,
 				5A1A45C920BFD96400380F11 /* ImageVAL.swift */,
 				5A1A45C520BFC8F300380F11 /* NetworkingService.swift */,
 				5A1A45C720BFD0F700380F11 /* GetImagersResponse.swift */,
@@ -76,8 +78,6 @@
 				5A1A45B820BFBCD400380F11 /* Assets.xcassets */,
 				5A1A45BA20BFBCD400380F11 /* LaunchScreen.storyboard */,
 				5A1A45BD20BFBCD400380F11 /* Info.plist */,
-				5A1A45CB20BFDFF100380F11 /* MyErrors.swift */,
-				5A1A45CD20BFEFB000380F11 /* ImageCashe.swift */,
 			);
 			path = CollectionViewImager;
 			sourceTree = "<group>";
