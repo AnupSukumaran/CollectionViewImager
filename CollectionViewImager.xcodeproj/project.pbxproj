@@ -12,6 +12,12 @@
 		5A1A45B720BFBCD000380F11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A1A45B520BFBCD000380F11 /* Main.storyboard */; };
 		5A1A45B920BFBCD400380F11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A1A45B820BFBCD400380F11 /* Assets.xcassets */; };
 		5A1A45BC20BFBCD400380F11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A1A45BA20BFBCD400380F11 /* LaunchScreen.storyboard */; };
+		5A1A45C420BFC29C00380F11 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1A45C320BFC29C00380F11 /* ImageCollectionViewCell.swift */; };
+		5A1A45C620BFC8F300380F11 /* NetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1A45C520BFC8F300380F11 /* NetworkingService.swift */; };
+		5A1A45C820BFD0F700380F11 /* GetImagersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1A45C720BFD0F700380F11 /* GetImagersResponse.swift */; };
+		5A1A45CA20BFD96400380F11 /* ImageVAL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1A45C920BFD96400380F11 /* ImageVAL.swift */; };
+		5A1A45CC20BFDFF100380F11 /* MyErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1A45CB20BFDFF100380F11 /* MyErrors.swift */; };
+		5A1A45CE20BFEFB000380F11 /* ImageCashe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1A45CD20BFEFB000380F11 /* ImageCashe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		5A1A45B820BFBCD400380F11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A1A45BB20BFBCD400380F11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A1A45BD20BFBCD400380F11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A1A45C320BFC29C00380F11 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		5A1A45C520BFC8F300380F11 /* NetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
+		5A1A45C720BFD0F700380F11 /* GetImagersResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetImagersResponse.swift; sourceTree = "<group>"; };
+		5A1A45C920BFD96400380F11 /* ImageVAL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageVAL.swift; sourceTree = "<group>"; };
+		5A1A45CB20BFDFF100380F11 /* MyErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyErrors.swift; sourceTree = "<group>"; };
+		5A1A45CD20BFEFB000380F11 /* ImageCashe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCashe.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +67,17 @@
 			isa = PBXGroup;
 			children = (
 				5A1A45B120BFBCD000380F11 /* AppDelegate.swift */,
+				5A1A45C920BFD96400380F11 /* ImageVAL.swift */,
+				5A1A45C520BFC8F300380F11 /* NetworkingService.swift */,
+				5A1A45C720BFD0F700380F11 /* GetImagersResponse.swift */,
 				5A1A45B320BFBCD000380F11 /* ViewController.swift */,
+				5A1A45C320BFC29C00380F11 /* ImageCollectionViewCell.swift */,
 				5A1A45B520BFBCD000380F11 /* Main.storyboard */,
 				5A1A45B820BFBCD400380F11 /* Assets.xcassets */,
 				5A1A45BA20BFBCD400380F11 /* LaunchScreen.storyboard */,
 				5A1A45BD20BFBCD400380F11 /* Info.plist */,
+				5A1A45CB20BFDFF100380F11 /* MyErrors.swift */,
+				5A1A45CD20BFEFB000380F11 /* ImageCashe.swift */,
 			);
 			path = CollectionViewImager;
 			sourceTree = "<group>";
@@ -135,8 +153,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A1A45C420BFC29C00380F11 /* ImageCollectionViewCell.swift in Sources */,
+				5A1A45CC20BFDFF100380F11 /* MyErrors.swift in Sources */,
+				5A1A45CE20BFEFB000380F11 /* ImageCashe.swift in Sources */,
 				5A1A45B420BFBCD000380F11 /* ViewController.swift in Sources */,
+				5A1A45C820BFD0F700380F11 /* GetImagersResponse.swift in Sources */,
 				5A1A45B220BFBCD000380F11 /* AppDelegate.swift in Sources */,
+				5A1A45C620BFC8F300380F11 /* NetworkingService.swift in Sources */,
+				5A1A45CA20BFD96400380F11 /* ImageVAL.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
